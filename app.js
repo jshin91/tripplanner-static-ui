@@ -9,6 +9,7 @@ var app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.engine('html', swig.renderFile);
+app.set('view cache', false);
 
 // logging and body parsing boilerplate
 app.use(morgan('dev'));
@@ -21,7 +22,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // serve static files 
 app.use(express.static(__dirname + '/public'))
-
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist')) //why do we need /dist????
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'))
 
 // middleware for our dynamic routes 
 app.use('/', require('./routes'));
