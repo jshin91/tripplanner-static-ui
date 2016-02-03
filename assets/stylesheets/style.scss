@@ -1,3 +1,91 @@
 body {
-	background-color: black;
+	background-color: #f4f4f4;
+	margin-top: 100px;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin: 5px;
 }
+
+$navbar-bg-color: #eeeeee;
+$navbar-text-color: #626262;
+$navbar-text-hover: darken($navbar-text-color, 15%);
+
+.navbar {
+	background-color: $navbar-bg-color;
+	height: 50px;
+	a {
+		text-decoration: none;
+		color: $navbar-text-color;
+		&:hover {
+			color: $navbar-text-hover;
+		}
+	}
+	.navbar-header {
+		float: left;
+		padding-top: 1em;
+	}
+	.navbar-brand {
+		font-size: 1.2em;
+	}
+}
+
+.navbar-fixed-top {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+// columns section
+
+.col-lg-3 {
+	width: 20%;
+	float: left;
+	padding: 10px 10px;
+	background-color: #FCFBE3;
+	clear: both;
+}
+
+.col-lg-9 {
+	width: 65%;
+	float: left;
+}
+
+
+.row {
+	margin-bottom: 20px;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
+
+#map {
+	width: auto;
+	height: 80vh;
+	position: fixed;
+}
+
+button {
+	background-color: #c1c1c1;
+	border: 0px;
+	border-radius: 10px;
+
+	&:hover {
+		background-color: green;
+	}
+}
+
+h3 {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
