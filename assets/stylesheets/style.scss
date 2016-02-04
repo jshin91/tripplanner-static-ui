@@ -13,6 +13,7 @@ $navbar-text-hover: darken($navbar-text-color, 15%);
 .navbar {
 	background-color: $navbar-bg-color;
 	height: 50px;
+	font-family: 'Lato';
 	a {
 		text-decoration: none;
 		color: $navbar-text-color;

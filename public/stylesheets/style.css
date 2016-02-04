@@ -7,7 +7,8 @@ body {
 
 .navbar {
   background-color: #eeeeee;
-  height: 50px; }
+  height: 50px;
+  font-family: 'Lato'; }
   .navbar a {
     text-decoration: none;
     color: #626262; }
