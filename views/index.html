@@ -3,9 +3,9 @@
 {% block body %}
 
 	<div class="section">
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-sm-12 col-m-12">
 			<div class="row">
-			<p>Hotels: 
+			<p><b>Hotels</b>: 
 			<br><select name ='select'>
 
 				{% for hotel in all_hotels %}
@@ -15,7 +15,7 @@
 			</select></p>
 
 			<p>
-			Restaurants: 
+			<b>Restaurants</b>: 
 			<br><select name ='select'>
 				{% for restaurant in all_restaurants %}
 					<option value='value1'>{{restaurant.name}}</option>
@@ -25,7 +25,7 @@
 			</p>
 
 			<p>
-			Activities: 
+			<b>Activities</b>: 
 			<br><select name ='select'>
 				{% for activities in all_activities %}
 					<option value='value1'>{{activities.name}}</option>
@@ -36,27 +36,23 @@
 			</div>
 			<div class="row">
 
-				<div class="panel panel-default">
-				  <div class="panel-heading"></div>
-				  <div class="panel-body">
-				    Panel content
-				  </div>
-				</div>
 				<h3>Day 1</h3>
 				<div class="panel panel-default">
 				  <div class="panel-heading">
-				    <h3 class="panel-title"><button>1</button> <button>2</button> <button>3</button> <button>4</button></h3>
+				    <h3 class="panel-title"><button>1</button> <button>2</button> <button>3</button> <button>+</button></h3>
 				  </div>
 				  <div class="panel-body">
-				    <p>My Hotel:
+				    <p><b>My Hotel</b>:
 				    <br>Selected hotel
 				    </p>
 
 				    <p>
-				    	My Restaurants
+				    	<b>My Restaurants</b>:
+				    	<br>Selected restaurant
 				    </p>
 				    <p>
-				    	My Activities
+				    	<b>My Activities</b>:
+				    	<br>Selected activity
 				    </p>
 				  </div>
 				</div>
@@ -65,8 +61,7 @@
 	</div>
 
 	<div class="section">
-		<div class="col-lg-9">
-		// MAP
+		<div class="col-lg-9 col-sm-12">
 			<div id="map"></div>
 			
 

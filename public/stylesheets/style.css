@@ -7,7 +7,8 @@ body {
 
 .navbar {
   background-color: #eeeeee;
-  height: 50px; }
+  height: 95px;
+  font-family: 'Karla', sans-serif; }
   .navbar a {
     text-decoration: none;
     color: #626262; }
@@ -15,28 +16,36 @@ body {
       color: #3c3c3c; }
   .navbar .navbar-header {
     float: left;
-    padding-top: 1em; }
+    padding-top: .5em; }
   .navbar .navbar-brand {
-    font-size: 1.2em; }
+    font-size: 2em; }
+  .navbar .navbar-right {
+    margin: 40px;
+    float: right;
+    font-size: 16px; }
+    .navbar .navbar-right input {
+      border: 1px solid gray;
+      padding: 2px; }
+  .navbar .logo {
+    margin: 3px;
+    clear: both;
+    float: left;
+    color: #9E9E9E; }
 
 .navbar-fixed-top {
   position: fixed;
   width: 100%;
   top: 0; }
 
-.col-lg-3 {
-  width: 20%;
-  float: left;
-  padding: 10px 10px;
-  background-color: #FCFBE3;
-  clear: both; }
+.col-lg-3, .col-sm-3 {
+  padding: 10px 10px; }
 
-.col-lg-9 {
-  width: 65%;
+.col-lg-9, .col-sm-3 {
   float: left; }
 
 .row {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-left: 20px; }
 
 footer {
   clear: both;
@@ -44,15 +53,19 @@ footer {
 
 #map {
   width: auto;
-  height: 80vh;
-  position: fixed; }
+  height: 80vh; }
 
 button {
   background-color: #c1c1c1;
   border: 0px;
   border-radius: 10px; }
   button:hover {
-    background-color: green; }
+    background-color: #BFE7E4;
+    border: 1px solid #aaaaaa; }
 
 h3 {
   text-align: center; }
+
+select {
+  background-color: #DEE5E7;
+  border: 1px solid gray; }

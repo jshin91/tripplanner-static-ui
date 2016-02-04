@@ -12,7 +12,9 @@ $navbar-text-hover: darken($navbar-text-color, 15%);
 
 .navbar {
 	background-color: $navbar-bg-color;
-	height: 50px;
+	height: 95px;
+	font-family: 'Karla', sans-serif;
+
 	a {
 		text-decoration: none;
 		color: $navbar-text-color;
@@ -22,10 +24,30 @@ $navbar-text-hover: darken($navbar-text-color, 15%);
 	}
 	.navbar-header {
 		float: left;
-		padding-top: 1em;
+		padding-top: .5em;
 	}
 	.navbar-brand {
-		font-size: 1.2em;
+		font-size: 2em;
+	}
+	// .navbar-search {
+	// 	margin-left: 200px;
+	// 	margin-top: 30px;
+
+	// }
+	.navbar-right {
+		margin: 40px;
+		float: right;
+		font-size: 16px;
+		input {
+			border: 1px solid gray;
+			padding: 2px;
+		}
+	}
+	.logo {
+		margin: 3px;
+		clear: both;
+		float: left;
+		color: #9E9E9E;
 	}
 }
 
@@ -37,22 +59,21 @@ $navbar-text-hover: darken($navbar-text-color, 15%);
 
 // columns section
 
-.col-lg-3 {
-	width: 20%;
-	float: left;
+.col-lg-3, .col-sm-3 {
+	// padding-left: 20px;
+	// float: left;
 	padding: 10px 10px;
-	background-color: #FCFBE3;
-	clear: both;
+	// background-color: #FCFBE3;
 }
 
-.col-lg-9 {
-	width: 65%;
+.col-lg-9, .col-sm-3 {
 	float: left;
 }
 
 
 .row {
 	margin-bottom: 20px;
+	padding-left: 20px;
 }
 
 footer {
@@ -63,7 +84,7 @@ footer {
 #map {
 	width: auto;
 	height: 80vh;
-	position: fixed;
+	// position: fixed;
 }
 
 button {
@@ -72,12 +93,18 @@ button {
 	border-radius: 10px;
 
 	&:hover {
-		background-color: green;
+		background-color: #BFE7E4;
+		border: 1px solid #aaaaaa;
 	}
 }
 
 h3 {
 	text-align: center;
+}
+
+select {
+	background-color: #DEE5E7;
+	border: 1px solid gray;
 }
 
 
